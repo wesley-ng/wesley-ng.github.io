@@ -14,7 +14,7 @@ html, body {
 }
 
 hr {
-    border-color: tomato;
+    background-color: white;
     border-width: 3px;
     max-width: 65px;
 }
