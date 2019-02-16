@@ -14,6 +14,7 @@ body {
     font-size: 1em;
     line-height: 1.5;
     background-color: #fbfbfb;
+    min-width: 320px;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     position: relative;
@@ -116,8 +117,8 @@ body {
 .works {
     display: grid;
     grid-gap: 5%;
-    grid-template-columns: [beginning] 23vw [midstart] 23vw [midend] 23vw [ending];
-    grid-template-rows: 400px 400px;
+    grid-template-columns: [beginning] 24vw [midstart] 24vw [midend] 24vw [ending];
+    grid-template-rows: 450px 500px;
     place-content: center;
     margin: 0 10% 5% 10%;
 }
@@ -128,7 +129,7 @@ body {
 
 .work {
     display: grid;
-    grid-template-rows: 300px 100px;
+    grid-template-rows: 350px 100px;
     text-align: center;
     border: 8px solid rgba(51, 189, 147, 0.6);
     border-radius: 10px;
@@ -265,11 +266,11 @@ span a {
 }
 
 /* Tab */
-@media screen and (min-width: 840px) and (max-width: 1280px) {
+@media screen and (min-width: 600px) and (max-width: 1050px) {
     .works {
         display: grid;
-        grid-gap: 60px;
-        grid-template-columns: 40% 40%;
+        grid-gap: 50px;
+        grid-template-columns: 46% 46%;
         grid-template-rows: 350px 350px;
     }
 
@@ -278,12 +279,12 @@ span a {
     }
 
     .work {
-        grid-template-rows: 275px 75px;
+        grid-template-rows: 250px 75px;
     }
 }
 
 /* Phone */
-@media only screen and (min-width: 320px) and (max-width: 839px) {
+@media only screen and (min-width: 320px) and (max-width: 599px) {
     .hello {
         flex-direction: column;
     }
@@ -303,7 +304,7 @@ span a {
     .works {
         display: grid;
         grid-gap: 60px;
-        grid-template-columns: 60%;
+        grid-template-columns: 85%;
         grid-template-rows: auto;
     }
 
@@ -313,7 +314,7 @@ span a {
 
     .work {
         display: grid;
-        grid-template-rows: 275px 100px;
+        grid-template-rows: 250px 75px;
         text-align: center;
         border: 8px solid rgba(51, 189, 147, 0.6);
         border-radius: 10px;
